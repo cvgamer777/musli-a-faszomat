@@ -42,8 +42,7 @@ export default class App extends React.Component {
               </tr>
             </thead>
             <tbody>
-              <tr><td>1</td><td>Classic Muesli</td><td>$4.65</td></tr>
-              {}
+              {this.state.musliData}
             </tbody>
           </table>
         </main>
