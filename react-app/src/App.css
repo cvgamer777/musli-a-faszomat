@@ -70,10 +70,10 @@
     main {
       flex-grow: 1;
       background-color: var(--content-bg);
-      overflow-x: auto;
       padding: 20px;
-      display: flex;
-      flex-direction: column;
+      display: block;
+      width: 100%;
+
     }
 
     main h1 {
@@ -81,6 +81,15 @@
       font-weight: 700;
       font-size: 2rem;
       white-space: nowrap;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      overflow-y: auto;
+      max-height: 400px;
+      
     }
 
     table {
