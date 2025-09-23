@@ -15,7 +15,7 @@ const conn = mysql.createConnection({
 
 
 app.get('/muslis',(req,res)=> {
-    conn.query("SELECT id, name, price, FROM musli",(err,result,fields)=>{
+    conn.query('SELECT id, name, price FROM musli',(err,result,fields)=>{
         if(err) console.warn(err)
         if (result) {
             console.log(result)
